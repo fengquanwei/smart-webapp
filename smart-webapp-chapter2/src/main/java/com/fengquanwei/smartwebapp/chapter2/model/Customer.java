@@ -7,12 +7,12 @@ package com.fengquanwei.smartwebapp.chapter2.model;
  * @create 2017/11/11 15:26
  **/
 public class Customer {
-    private long id;
-    private String name;
-    private String contact;
-    private String telephone;
-    private String email;
-    private String remark;
+    private long id; // 客户ID
+    private String name; // 客户名称
+    private String contact; // 联系人
+    private String telephone; // 电话号码
+    private String email; // 邮箱地址
+    private String remark; // 备注
 
     public long getId() {
         return id;

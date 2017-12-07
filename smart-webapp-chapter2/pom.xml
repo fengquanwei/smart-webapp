@@ -9,7 +9,6 @@
     <artifactId>smart-webapp-chapter2</artifactId>
     <packaging>war</packaging>
     <name>smart-webapp-chapter2 Maven Webapp</name>
-    <url>http://maven.apache.org</url>
 
     <dependencies>
         <!-- Servelt -->

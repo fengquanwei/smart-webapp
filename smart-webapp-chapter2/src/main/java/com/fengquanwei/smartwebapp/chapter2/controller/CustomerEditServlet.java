@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * CustomerEditServlet
+ * 编辑客户
  *
  * @author fengquanwei
  * @create 2017/11/11 15:56
