@@ -9,7 +9,10 @@
     <artifactId>smart-webapp-chapter3</artifactId>
     <packaging>war</packaging>
     <name>smart-webapp-chapter3 Maven Webapp</name>
-    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
         <!-- smart-framework -->
