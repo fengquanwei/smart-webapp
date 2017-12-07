@@ -2,7 +2,10 @@ package com.fengquanwei.smartwebapp.chapter3.model;
 
 /**
  * 客户
- */
+ *
+ * @author fengquanwei
+ * @create 2017/12/07 15:33
+ **/
 public class Customer {
     private long id; // 客户ID
     private String name; // 客户名称
