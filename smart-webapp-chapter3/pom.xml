@@ -15,7 +15,7 @@
     </properties>
 
     <dependencies>
-        <!-- smart-framework -->
+        <!-- Smart Framework -->
         <dependency>
             <groupId>com.fengquanwei</groupId>
             <artifactId>smart-framework</artifactId>
