@@ -1,8 +1,11 @@
 package com.fengquanwei.webapp.chapter3.controller;
 
 import com.fengquanwei.framework.annotation.Action;
+import com.fengquanwei.framework.annotation.Controller;
 import com.fengquanwei.framework.bean.Param;
 import com.fengquanwei.framework.bean.View;
+import com.fengquanwei.plugin.security.SecurityHelper;
+import com.fengquanwei.plugin.security.exception.AuthcException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +15,7 @@ import org.slf4j.LoggerFactory;
  * @author fengquanwei
  * @create 2017/12/11 20:22
  **/
+@Controller
 public class SystemController {
     private static final Logger LOGGER = LoggerFactory.getLogger(SystemController.class);
 
@@ -38,12 +42,12 @@ public class SystemController {
     public View loginSubmit(Param param) {
         String username = param.getString("username");
         String password = param.getString("password");
-//        try {
-//            SecurityHelper.login(username, password);
-//        } catch (AuthcException e) {
-//            LOGGER.error("login failure", e);
-//            return new View("/login");
-//        }
+        try {
+            SecurityHelper.login(username, password);
+        } catch (AuthcException e) {
+            LOGGER.error("login failure", e);
+            return new View("/login");
+        }
         return new View("/customer");
     }
 
@@ -52,7 +56,7 @@ public class SystemController {
      */
     @Action("get:/logout")
     public View logout() {
-//        SecurityHelper.logout();
+        SecurityHelper.logout();
         return new View("/");
     }
 }
